@@ -10,28 +10,7 @@ export default class UserSeeder extends BaseSeeder {
         areaId: 1,
         isActive: true,
         password: '1234',
-      },
-      {
-        email: 'liderc@gmail.com',
-        roleId: 2, 
-        areaId: 2,
-        isActive: true,
-        password: '1234',
-      },
-      {
-        email: 'liderx@gmail.com',
-        roleId: 3,
-        areaId: 3,
-        isActive: true,
-        password: '1234',
-      },
-      {
-        email: 'secrex@gmail.com',
-        roleId: 4,
-        areaId: 4,
-        isActive: true,
-        password: '1234',
-      },
+      }
     ])
   }
 }
