@@ -26,7 +26,7 @@ Route.get('/', async () => {
 
 Route.post('login', 'AuthController.login')
 Route.delete('logout', 'AuthController.logout').middleware(['auth:api'])
-
+Route.post('register', 'UsersController.store');
 Route.group(() => {
   Route.resource('users', 'UsersController')
   Route.get('user', 'UsersController.getUser')

@@ -8,6 +8,13 @@ export default class UsersController {
     return response.ok(users)
   }
 
+  public async store({ response, request }: HttpContextContract) {
+    const userData = request.body();
+    const user = await User.create(userData)
+
+    return response.ok(user)
+  }
+
   public async getUser({ response, auth }: HttpContextContract) {
     const userId = auth.user?.id || 0
 
