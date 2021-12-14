@@ -11,7 +11,7 @@ export default class RoleSeeder extends BaseSeeder {
         name: 'Lider de calidad', // Ver y aprobar o rechazar solicitudes
       },
       {
-        name: 'Lider X', // Crear solicitud y actualizar docs
+        name: 'Lider X', // Crear solicitud y docs
       },
       {
         name: 'Secretario X', // Leer documentos
