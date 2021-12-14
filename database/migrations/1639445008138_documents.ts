@@ -9,7 +9,7 @@ export default class Documents extends BaseSchema {
       table.string('tipo', 100).notNullable()
       table.string('nombre', 100).notNullable()
       table.string('version', 50).notNullable()
-      table.string('status', 50).notNullable()
+      table.string('status', 50).notNullable().defaultTo('pendient')
       table.string('responsable', 255).notNullable()
       table.string('areas', 255).notNullable()
       table.string('documentos_relacionados', 255).notNullable()

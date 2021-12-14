@@ -27,7 +27,6 @@ export default class CreateDocumentValidator {
     tipo: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
     nombre: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
     version: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
-    status: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
     responsable: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
     areas: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
     documentosRelacionados: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),

@@ -32,6 +32,7 @@ Route.group(() => {
   Route.get('user', 'UsersController.getUser')
   Route.resource('docs', 'DocumentsController')
   Route.post('doc', 'DocumentsController.store')
+  Route.post('update-doc', 'DocumentsController.updateStatus')
 })
   .prefix('api/v1')
   .middleware(['auth:api'])
