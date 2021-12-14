@@ -9,16 +9,16 @@ export default class AreaSeeder extends BaseSeeder {
         email: 'desarrollo@gmail.com',
       },
       {
-        name: 'Calidad',
-        email: 'desarrollo@gmail.com',
+        name: 'Area 2',
+        email: 'area2@gmail.com',
       },
       {
-        name: 'Servicios Administrativos',
-        email: 'luis.carrilloo.perez@gmail.com',
+        name: 'Area 3',
+        email: 'area3@gmail.com',
       },
       {
-        name: 'Vinculación',
-        email: 'aguscas43630@gmail.com',
+        name: 'Area 4',
+        email: 'area4@gmail.com',
       },
     ])
   }

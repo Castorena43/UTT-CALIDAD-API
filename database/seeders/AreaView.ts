@@ -15,10 +15,10 @@ export default class AreaViewSeeder extends BaseSeeder {
       },
 
       // Lider calidad
-      {
-        areaId: 2,
-        viewId: 1,
-      },
+      // {
+      //   areaId: 2,
+      //   viewId: 1,
+      // },
       {
         areaId: 2,
         viewId: 2,
