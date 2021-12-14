@@ -29,7 +29,18 @@ export default class DocumentsController {
       })
     }
     
-  } 
+  }
+  
+  public async update({ response, request, params }: HttpContextContract){
+    const doc = await Document.findOrFail(params.id);
+    doc.merge(request.body())
+    await doc.save();
+
+    return response.ok({
+      status: true,
+      message: 'Document was updated successfully',
+    })
+  }
 
   public async updateStatus({ response, request }: HttpContextContract) {
     const docId = request.input('docId')

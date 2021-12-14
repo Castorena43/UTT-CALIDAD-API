@@ -9,7 +9,7 @@ export default class Requests extends BaseSchema {
       table.bigInteger('documento_id').unsigned().references('documents.id').notNullable()
       table.string('nombre', 100).notNullable()
       table.string('version', 50).notNullable()
-      table.string('status', 50).notNullable()
+      table.string('status', 50).notNullable().defaultTo('pendient')
       table.string('punto_cambio', 100).notNullable()
       table.string('descripcion_actual', 255).notNullable()
       table.string('descripcion_cambio').notNullable()
