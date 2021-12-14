@@ -31,7 +31,7 @@ Route.group(() => {
   Route.resource('users', 'UsersController')
   Route.get('user', 'UsersController.getUser')
   Route.resource('docs', 'DocumentsController')
-  Route.post('doc', 'DocumentsController.store')
+  // Route.post('doc', 'DocumentsController.store')
   Route.post('update-doc', 'DocumentsController.updateStatus')
   Route.resource('requests', 'RequestsController')
   Route.post('update-req', 'DocumentsController.updateStatus')
