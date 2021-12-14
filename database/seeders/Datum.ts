@@ -12,6 +12,6 @@ export default class DatumSeeder extends BaseSeeder {
     await RoleSeeder.run()
     await ViewSeeder.run()
     await AreaViewSeeder.run()
-    await UserSeeder.run()
+    // await UserSeeder.run()
   }
 }
