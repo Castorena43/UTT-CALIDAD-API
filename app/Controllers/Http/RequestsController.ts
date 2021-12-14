@@ -36,10 +36,11 @@ export default class RequestsController {
         const docId = request.input('docId')
         const requestId = request.input('requestId')
         const status = request.input('status')
-    
         try {
           const doc = await Document.findOrFail(docId)
           const req = await Request.findOrFail(requestId)
+          console.log('HOLAAAAAAAAAAAAAAAAAAA');
+          
           if (status === 'approved') {
             req.status = status
             doc.version = req.version

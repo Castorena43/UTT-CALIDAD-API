@@ -27,7 +27,7 @@ export default class CreateRequestValidator {
     documentoId: schema.number([rules.required()]),
     nombre: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
     version: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
-    status: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
+    // status: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
     puntoCambio: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
     descripcionActual: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ]),
     descripcionCambio: schema.string({trim:true}, [ rules.required(), rules.maxLength(100) ])

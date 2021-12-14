@@ -34,7 +34,7 @@ Route.group(() => {
   // Route.post('doc', 'DocumentsController.store')
   Route.post('update-doc', 'DocumentsController.updateStatus')
   Route.resource('requests', 'RequestsController')
-  Route.post('update-req', 'DocumentsController.updateStatus')
+  Route.post('update-req', 'RequestsController.updateStatus')
 })
   .prefix('api/v1')
   .middleware(['auth:api'])
